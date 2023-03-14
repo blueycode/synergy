@@ -149,3 +149,27 @@ body {
 #right button:hover {
     background-position: 0;
 }
+
+.custom-toast {
+    box-shadow:
+        0px 0px 8px 5px rgba(0, 0, 0, 0.1) !important;
+    padding: 1rem 2rem !important;
+}
+
+.warning {
+    background:
+        linear-gradient(
+            135deg,
+            #f64f4f 10%,
+            #e93535 100%
+        ) !important;
+}
+
+.success {
+    background:
+        linear-gradient(
+            135deg,
+            #5a805a 10%,
+            #4a764a 100%
+        ) !important;
+}
