@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-image: url("images/background.webp");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-card {
+    height: 35rem;
+    width: 55%;
+    border-radius: 25px;
+    display: flex;
+    background-image:
+        url("images/abstract-roots.webp"),
+        linear-gradient(
+            322deg,
+            rgba(28, 19, 21, 1) 0%,
+            rgba(28, 19, 21, 1) 67%,
+            rgba(48, 46, 26, 0.95) 100%
+        );
+    background-repeat: no-repeat;
+    background-size: 70%, 100%;
+}
+
+#main-card > div {
+    width: 50%;
+}
+
+@media only screen and (max-width: 1280px) {
+    #main-card {
+        width: 90%;
+    }
+}
+
+#left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:
+        Arial, Helvetica, sans-serif;
+    color: #ead089;
+    font-size: 1.7rem;
+    text-shadow: 
+        0 0 7px #ead089DD,
+        0 0 42px #ead089CC,
+        0 0 92px #ead08999;
+}
+
+#left > img {
+    height: 9rem;
+    margin-left: -25px;
+}
+
+#right form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.2rem;
+    padding-right: 3rem;
+    height: 100%;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(28, 19, 21, 0) 0%,
+            rgba(28, 19, 21, 1) 40%,
+            rgba(50, 34, 37, 0) 100%
+        );
+}
+
+#right div {
+    margin: 2rem 0 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #706f73;
+    font-size: 1.1rem;
+}
+
+#right input[type=text],
+#right input[type=email] {
+    background-color: rgba(0, 0, 0, 0);
+    height: 3.2rem;
+    padding: 1rem 2rem;
+    border: 2px solid #706f73;
+    color: #706f73;
+    font-size: 1.05rem;
+    border-radius: 40px;
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.5);
+    outline: none;
+}
+
+#right input[type=text]::placeholder {
+    color: #706f7399;
+}
+
+#right input[type=text].error {
+    border: 2px solid #e93535;
+    color: #e93535;
+}
+
+#right input[type=checkbox] {
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+#right h2 {
+    font-family:
+        Arial, Helvetica, sans-serif;
+    color: #ead089;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-shadow:
+        0 0 7px #ead08980,
+        0 0 42px #ead08970,
+        0 0 92px #ead08960;
+}
+
+#right button {
+    font-size: 1.2rem;
+    height: 3.3rem;
+    border-radius: 40px;
+    border: none;
+    font-weight: bold;
+    background-color: #d8d8d8;
+    background-image:
+        linear-gradient(
+            45deg,
+            #b78438 50%,
+            transparent 50%
+        );
+    background-position: 100%;
+    background-size: 300%;
+    transition: background 0.8s ease-in-out;
+    cursor: pointer;
+}
+
+#right button:hover {
+    background-position: 0;
+}
