@@ -32,7 +32,16 @@ form.addEventListener(
                     formHasError = true;
                 }
             }
-        )
+        );
+
+        if (fields.every(f => f.value.trim() !== "")) {
+            Toastify({
+                text: "Data has been sent! Let's buld a better world together! 🌱",
+                className: "custom-toast success"
+            }).showToast();
+
+            e.target.reset();
+        }
     }
 )
 
